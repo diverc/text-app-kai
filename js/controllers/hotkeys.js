@@ -40,6 +40,24 @@ HotkeysController.prototype.onKeydown_ = function(e) {
         }
         return false;
 
+      case 'm':
+      case 'M':
+        // ctrl +m enter  13
+	this.editor_.cm_.triggerOnKeyDown({type: "keydown", keyCode: 13, preventDefault: function(e){}, stopPropagation: function(e){}});
+        return false;
+
+      case 'h':
+      case 'H':
+        // ctrl +h enter  8
+	this.editor_.cm_.triggerOnKeyDown({type: "keydown", keyCode: 8, preventDefault: function(e){}, stopPropagation: function(e){}});
+        return false;
+
+      case 'i':
+      case 'I':
+        // ctrl +i tab 9
+	this.editor_.cm_.triggerOnKeyDown({type: "keydown", keyCode: 9, preventDefault: function(e){}, stopPropagation: function(e){}});
+        return false;
+
       case 'e':
       case 'E':
         // Focus the first button in the sidebar. This includes opening
