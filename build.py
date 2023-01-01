@@ -24,6 +24,7 @@ BUILD_DIR = os.path.join(BASE_DIR, 'build')
 # the <!-- JS --> block in index.html).
 FILES_TO_COPY = [
   'README-Text-KAI.md',
+  'LICENSE.md',
   'index.html',
   'css/app.css',
   'css/print.css',
