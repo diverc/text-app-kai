@@ -23,6 +23,7 @@ BUILD_DIR = os.path.join(BASE_DIR, 'build')
 # all non javascript files as well as all javascript files declared outside of
 # the <!-- JS --> block in index.html).
 FILES_TO_COPY = [
+  'README-Text-KAI.md',
   'index.html',
   'css/app.css',
   'css/print.css',
