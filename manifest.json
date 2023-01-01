@@ -1,7 +1,7 @@
 {
-  "name": "Text Dev",
+  "name": "Text-KAI",
   "description": "__MSG_appDesc__",
-  "default_locale": "en",
+  "default_locale": "ja",
   "version": "0.7",
   "icons": {
     "16": "icon/16x16.png",

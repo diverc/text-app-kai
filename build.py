@@ -10,8 +10,8 @@ import urllib.parse
 import urllib.request
 import glob
 
-APP_NAME = 'Text'
-CANARY_APP_NAME = 'Text Canary'
+APP_NAME = 'Text-KAI'
+CANARY_APP_NAME = 'Text-KAI-Canary'
 IS_APP = True
 
 BASE_DIR = os.path.dirname(sys.argv[0])
