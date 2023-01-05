@@ -127,6 +127,7 @@ function EditorCodeMirror(editorElement, settings) {
   this.cm_.setSize(null, 'auto');
   this.cm_.on('change', this.onChange.bind(this));
   this.setTheme(settings.get('theme'));
+  this.setKeymap(settings.get('keymap'));
   this.search_ = new Search(this.cm_);
   // Mimic Sublime behaviour there.
   this.defaultTabHandler_ = CodeMirror.commands.defaultTab;
@@ -269,6 +270,13 @@ EditorCodeMirror.prototype.setTabSize = function(size) {
 EditorCodeMirror.prototype.setTheme = function(theme) {
   if (theme !== 'dark') theme = 'light';
   this.cm_.setOption('theme', theme);
+};
+
+/**
+ * @param {string} keymap
+ */
+EditorCodeMirror.prototype.setKeymap = function(keymap) {
+  this.cm_.setOption('keyMap', keymap);
 };
 
 /**

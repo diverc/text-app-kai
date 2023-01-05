@@ -79,6 +79,26 @@
     "message": "暗い",
     "description": "The text of the dark Option Theme."
   },
+  "keymapSetting": {
+    "message": "KeyMap",
+    "description": "The text of the  Option Keymap."
+  },
+  "defaultKeymapOption": {
+    "message": "default",
+    "description": "The text of the default Option Keymap."
+  },
+  "sublimeKeymapOption": {
+    "message": "sublime",
+    "description": "The text of the sublime Option Keymap."
+  },
+  "vimKeymapOption": {
+    "message": "vim",
+    "description": "The text of the vim Option Keymap."
+  },
+  "emacsKeymapOption": {
+    "message": "emacs",
+    "description": "The text of the emacs Option Keymap."
+  },
   "helpSection": {
     "message": "ヘルプ",
     "description": "Title for a section with useful links to help articles."

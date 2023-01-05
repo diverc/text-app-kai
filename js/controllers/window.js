@@ -90,6 +90,13 @@ WindowController.prototype.setTheme = function(theme) {
 };
 
 /**
+ * @param {string} keymap
+ */
+WindowController.prototype.setKeymap = function(keymap) {
+  $('body').attr('keymap', keymap);
+};
+
+/**
  * Close app window after warning user of all unsaved progress if present.
  */
 WindowController.prototype.close = function() {

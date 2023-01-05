@@ -93,6 +93,13 @@ TextApp.prototype.setTheme = function() {
   this.editor_.setTheme(theme);
 };
 
+TextApp.prototype.setKeymap = function() {
+    const keymap = this.settings_.get('keymap');
+    this.windowController_.setKeymap(keymap);
+    this.editor_.setKeymap(keymap);
+};
+
+
 /**
  * Remove the editor so it can be reinitialized.
  * @param editorRootElement The DOM element containing the editor.
@@ -154,6 +161,7 @@ TextApp.prototype.updateControllers_ = function() {
  */
 TextApp.prototype.loadSettingsIntoEditor = function() {
   this.setTheme();
+  this.setKeymap();
   this.editor_.setFontSize(this.settings_.get('fontsize'));
   this.editor_.showHideLineNumbers(this.settings_.get('linenumbers'));
   this.editor_.setSmartIndent(this.settings_.get('smartindent'));
@@ -237,6 +245,10 @@ TextApp.prototype.onSettingsChanged_ = function(e, key, value) {
 
     case 'theme':
       this.setTheme();
+      break;
+
+    case 'keymap':
+      this.setKeymap();
       break;
 
     case 'wraplines':

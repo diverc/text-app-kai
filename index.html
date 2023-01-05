@@ -189,6 +189,49 @@
                 </div>
               </div>
             </div>
+            <div class="group" role="radiogroup" aria-labelledby="setting-keymap-heading">
+              <h2 id="setting-keymap-heading" i18n-content="keymapSetting"></h2>
+              <div class="mdc-form-field">
+                <label for="setting-keymap-default" i18n-content="DefaultkeymapOption"></label>
+                <div class="mdc-radio">
+                  <input class="mdc-radio__native-control" type="radio" id="setting-keymap-default" name="setting-keymap" value="default">
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-form-field">
+                <label for="setting-keymap-sublime" i18n-content="sublimekeymapOption"></label>
+                <div class="mdc-radio">
+                  <input class="mdc-radio__native-control" type="radio" id="setting-keymap-sublime" name="setting-keymap" value="sublime">
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-form-field">
+                <label for="setting-keymap-vim" i18n-content="vimkeymapOption"></label>
+                <div class="mdc-radio">
+                  <input class="mdc-radio__native-control" type="radio" id="setting-keymap-vim" name="setting-keymap" value="vim">
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-form-field">
+                <label for="setting-keymap-emacs" i18n-content="emacskeymapOption"></label>
+                <div class="mdc-radio">
+                  <input class="mdc-radio__native-control" type="radio" id="setting-keymap-emacs" name="setting-keymap" value="emacs">
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="group" aria-labelledby="setting-help-heading">
               <h2 id="setting-help-heading" i18n-content="helpSection"></h2>
               <div class="mdc-form-field">
@@ -298,6 +341,9 @@
   <script src="third_party/CodeMirror/mode/xml/xml.js" type="text/javascript"></script>
   <script src="third_party/CodeMirror/mode/xquery/xquery.js" type="text/javascript"></script>
   <script src="third_party/CodeMirror/mode/yaml/yaml.js" type="text/javascript"></script>
+  <script src="third_party/CodeMirror/keymap/sublime.js"></script>
+  <script src="third_party/CodeMirror/keymap/vim.js"></script>
+  <script src="third_party/CodeMirror/keymap/emacs.js"></script>
   <script src="js/app.js" type="text/javascript"></script>
   <script src="js/editor-cm.js" type="text/javascript"></script>
   <script src="js/editor-ta.js" type="text/javascript"></script>

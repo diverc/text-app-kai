@@ -48,6 +48,7 @@ Settings.SETTINGS = {
   'spacestab': {'default': true, 'type': 'boolean', 'widget': 'checkbox'},
   'tabsize': {'default': 4, 'type': 'integer', 'widget': 'number'},
   'theme': {'default': 'default', 'type': 'string', 'widget': 'radio'},
+  'keymap': {'default': 'default', 'type': 'string', 'widget': 'radio'},
   'wraplines': {'default': true, 'type': 'boolean', 'widget': 'checkbox'},
   'search': {'default': true, 'type': 'boolean', 'widget': 'search'},
 };
